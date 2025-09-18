@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo img {
+  width: 350px;
+  padding: 12px 12px 3px 12px;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+li a:hover {
+  background-color: #f3a806;
+  color: white;
+  border-radius: 5px;
+}
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+.fa-bars {
+  font-size: 30px;
+  color: #333;
+}
+
+/* Main Content */
+main {
+  margin: 50px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+main h1, main h2 {
+  margin-bottom: 15px;
+}
+main p, main ul {
+  margin-bottom: 20px;
+}
+.features ul, .why-choose ul {
+  list-style: none;
+  padding-left: 0;
+}
+.features li, .why-choose li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #131111;
+  padding: 20px;
+}
+.p-footer, .contact-footer {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.contact-footer {
+  margin-top: 5px;
+  color: #f0e4d7;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet (600px – 1024px) */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .logo img {
+    width: 220px;
+  }
+  li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .fa-bars {
+    font-size: 26px;
+  }
+}
+
+/* Phone (<600px) */
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 70%;
+    background-color: #181717;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  li a {
+    font-size: 16px;
+    color: #fff;
+    padding: 12px;
+  }
+  #hamburger {
+    display: block;
+  }
+  .logo img {
+    width: 170px;
+  }
+  .header {
+    padding: 10px 20px;
+  }
+}

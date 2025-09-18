@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="/Pictures/logo-real.jpg" alt="logo">
+            </div>
+
+            <div class="menu">
+                <div class="container1">
+                    <nav>
+                        <ul id="nav-menu">
+                            <li><a href="/index.html" target="_blank">Home</a></li>
+                            <li><a href="/About us.html" target="_blank">About us</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Jobs</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to Romduol Center for Education</h1>
+            <p>
+                At RCE, we believe that true education combines knowledge, skills, and character. 
+                Our programs are designed to empower students to communicate confidently, 
+                master modern technology, and build the essential soft skills needed for success 
+                in school, work, and life.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section class="welcome">
+            <h2>About Our Center</h2>
+            <p>
+                Romduol Center for Education is dedicated to providing high-quality learning 
+                opportunities for children, teenagers, and adults. We focus on Languages, 
+                Technology, and Soft Skills to prepare our students for both local and global challenges. 
+                With experienced teachers and a friendly environment, our center is the perfect place 
+                to grow academically and personally.
+            </p>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <h2>What We Offer</h2>
+            <ul>
+                <li>🌐 <strong>Language Programs</strong> – Learn English and Chinese with interactive methods.</li>
+                <li>💻 <strong>Technology Training</strong> – Develop essential computer and digital skills.</li>
+                <li>🤝 <strong>Soft Skills Development</strong> – Improve communication, teamwork, and leadership.</li>
+            </ul>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>✔ Experienced and caring teachers.</li>
+                <li>✔ A modern curriculum.</li>
+                <li>✔ A safe, friendly learning environment.</li>
+                <li>✔ Affordable tuition fees.</li>
+            </ul>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="call-to-action">
+            <h2>Start Your Journey Today</h2>
+            <p>
+                Whether you want to improve your language skills, gain confidence with technology, 
+                or strengthen your personal and professional abilities, Romduol Center for Education 
+                is here to guide you every step of the way.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer1">
+        <p class="p-footer">Copyright © 2025 - Romduol Center for Education</p>
+        <p class="contact-footer">Contact us now: 085 932 964</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
