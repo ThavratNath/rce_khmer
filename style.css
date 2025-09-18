@@ -95,7 +95,7 @@ footer {
 /* Tablet (600px – 1024px) */
 @media (max-width: 1024px) and (min-width: 601px) {
   .logo img {
-    width: 270px;
+    width: 310px;
   }
   li a {
     font-size: 16px;
@@ -131,9 +131,9 @@ footer {
     display: block;
   }
   .logo img {
-    width: 220px;
+    width: 270px;
   }
   .header {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 }
